@@ -66,10 +66,6 @@ git config --global --show-origin credential.helper ou git config --global --sho
 
 ### Conectando ao github, via chave SSH.
 
-Após abrir o site do Github https://github.com/  e fazer login em sua conta.
-
-Clique em sua foto de perfil no Github --> Settings --> SSH and GPG keys --> New SSH key
-
 #### Verificando se a chaves SSH no computador.
 
 No gitbash, insira o comando **ls -al ~/ .ssh**.
@@ -116,4 +112,14 @@ Ex.:
 			xclip -sel clip < ~/.ssh/id_ed25519.pub ou xclip -sel clip < ~/.ssh/id_rsa.pub
 		- MACOS
 			pbcopy < ~/.ssh/id_ed25519.pub ou pbcopy < ~/.ssh/id_rsa.pub
+
+Obs.: O terminal não mostra nenhuma informação, porém a copia foi realizada.
+
+#### Adicionando a chave publica no GitHub.
+
+Após abrir o site do Github https://github.com/  e fazer login em sua conta.
+
+Clique em sua foto de perfil no Github --> Settings --> SSH and GPG keys --> New SSH key
+
+	1 Defina um nome ou identificador para a chave na opção "Title", mantenha a opção "Key type" configurado como **Authentication Key**, e na opção "Key", copie a chave ssh publica que você colou no git bash através do comando acima, clique então em "Add SSH key", pronto, seu git já está autenticado com sua chave ssh e pronto para trabalhar.
 
