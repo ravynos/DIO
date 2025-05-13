@@ -106,5 +106,14 @@ Ex.:
 
 	2 Adicionar sua chave privada ao ssh-agente.
 
-		$ ssh-add ~/.ssh/id_ad25519
+		$ ssh-add ~/.ssh/id_ed25519 ou $ ssh-add ~/.ssh/id_rsa
+		
+	3 Copiando a chave publica para adicionar ao github.
+
+		- Windows
+			clip <~/.ssh/id_ed25519.pub ou clip <~/.ssh/id_rsa.pub
+		- Linux 
+			xclip -sel clip < ~/.ssh/id_ed25519.pub ou xclip -sel clip < ~/.ssh/id_rsa.pub
+		- MACOS
+			pbcopy < ~/.ssh/id_ed25519.pub ou pbcopy < ~/.ssh/id_rsa.pub
 
