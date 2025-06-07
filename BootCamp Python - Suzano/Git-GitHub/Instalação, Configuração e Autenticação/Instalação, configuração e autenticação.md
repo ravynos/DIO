@@ -8,25 +8,25 @@ A instalação e simples, ela basicamente consiste em **"Next"**, e interessante
 
 # Configurando o Git
 
-- Configurando nome de usuário.\
+- Configurando nome de usuário.  
 
-	git config --global user.name "Nome de usuário"
+	git config --global user.name "Nome de usuário"  
 
-- Configurando e-mail.\
-	git config --global user.email "usuario@provedor.com"
+- Configurando e-mail.  
+	git config --global user.email "usuario@provedor.com"  
 
-- Visualizando Usuário e e-mail configurados.\
-	git config user.name\
-	git config user.email\
+- Visualizando Usuário e e-mail configurados.  
+	git config user.name  
+	git config user.email  
 
-- Visualizando a Branch padrão configurada.\
-	git config init.defaultBranch\
+- Visualizando a Branch padrão configurada.  
+	git config init.defaultBranch  
 
-- Mudando a git padrão configurada.\
-	git config --global init.defaultBranch main\
+- Mudando a git padrão configurada.  
+	git config --global init.defaultBranch main   
 
-- Visualizando a lista de configurações\
-	git config --global --list
+- Visualizando a lista de configurações  
+	git config --global --list  
 
 # Conectando ao GitHub
 
@@ -60,7 +60,7 @@ Para que não seja necessário usar autenticar todas as vezes que for realizado 
 
 git config --global --show-origin "configuração desejada."
 
-Exemplos:\
+Exemplos:  
 git config --global --show-origin credential.helper ou git config --global --show-origin user.name
 
 
@@ -117,13 +117,13 @@ Obs.: O terminal não mostra nenhuma informação, porém a copia foi realizada.
 
 #### Adicionando a chave publica no GitHub.
 
-Após abrir o site do Github https://github.com/  e fazer login em sua conta.
+Após abrir o site do Github https://github.com/  e fazer login em sua conta.  
 
-Clique em sua foto de perfil no Github --> Settings --> SSH and GPG keys --> New SSH key
+Clique em sua foto de perfil no Github --> Settings --> SSH and GPG keys --> New SSH key  
 
- Defina um nome ou identificador para a chave na opção **"Title"**.\
+ Defina um nome ou identificador para a chave na opção **"Title"**.  
  
- Mantenha a opção **"Key type"** configurado como **Authentication Key**.\
+ Mantenha a opção **"Key type"** configurado como **Authentication Key**.  
  
  Na opção **"Key"**, copie a chave ssh publica que você colou no git bash através do comando acima, clique então em **"Add SSH key"**, pronto, seu git já está autenticado com sua chave ssh e pronto para trabalhar.
 
